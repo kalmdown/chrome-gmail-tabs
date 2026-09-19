@@ -1,0 +1,11 @@
+{
+  "name": "chrome-gmail-tabs",
+  "private": true,
+  "description": "Standalone Gmail saved-filter tabs Chrome extension.",
+  "scripts": {
+    "test": "node --test tests/extension.test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

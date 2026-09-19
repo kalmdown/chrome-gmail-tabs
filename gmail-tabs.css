@@ -1,0 +1,30 @@
+/* Version source: manifest.json. */
+#kn-gmail-tabs { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; padding: 10px 0 0; background: #fff; color: #202124; font: 14px Arial, sans-serif; }
+#kn-gmail-tabs .kn-gct-item { display: flex; align-items: center; box-sizing: border-box; padding: 0; border: 1px solid #dadce0; border-bottom: 3px solid var(--kn-label-color, #dadce0); border-radius: 9px 9px 0 0; min-width: 0; max-width: 360px; background: #fff; }
+#kn-gmail-tabs .kn-gct-tab, #kn-gmail-tabs .kn-gct-icon, #kn-gmail-tabs .kn-gct-add { all: unset !important; box-sizing: border-box !important; font: 500 14px Arial, sans-serif !important; color: #444746 !important; cursor: pointer !important; }
+#kn-gmail-tabs .kn-gct-tab { display: block !important; padding: 9px 0 !important; min-width: 0 !important; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; }
+#kn-gmail-tabs .kn-gct-item:hover { background: #f1f3f4; }
+#kn-gmail-tabs .kn-gct-item:has([aria-pressed="true"]) { background: #eaf1fb; }
+#kn-gmail-tabs .kn-gct-tab[aria-pressed="true"] { color: #0b57d0 !important; }
+#kn-gmail-tabs button:focus-visible { outline: 2px solid #0b57d0 !important; outline-offset: -2px !important; }
+#kn-gmail-tabs .kn-gct-drag { display: grid; place-items: center; flex: 0 0 18px; align-self: stretch; color: #80868b; font-size: 18px; cursor: grab; user-select: none; }
+#kn-gmail-tabs .kn-gct-drag:active { cursor: grabbing; }
+#kn-gmail-tabs .kn-gct-controls { display: flex; flex: 0 0 auto; opacity: 0; pointer-events: none; }
+#kn-gmail-tabs .kn-gct-item:hover .kn-gct-controls, #kn-gmail-tabs .kn-gct-item:focus-within .kn-gct-controls { opacity: 1; pointer-events: auto; }
+#kn-gmail-tabs .kn-gct-icon { display: grid !important; place-items: center !important; width: 24px !important; height: 28px !important; font-size: 18px !important; border-radius: 4px !important; }
+#kn-gmail-tabs .kn-gct-icon:hover { background: #dadce0 !important; }
+#kn-gmail-tabs .kn-gct-add { display: grid !important; place-items: center !important; flex: 0 0 28px !important; width: 28px !important; height: 28px !important; padding: 0 !important; border: 1px solid #dadce0 !important; border-radius: 50% !important; font-size: 22px !important; line-height: 1 !important; }
+#kn-gmail-tabs .kn-gct-add:hover { background: #f1f3f4 !important; }
+#kn-gmail-tabs .kn-gct-status { font: 12px Arial, sans-serif; color: #b3261e; }
+@media (hover: none) { #kn-gmail-tabs .kn-gct-controls { opacity: 1; pointer-events: auto; } }
+#kn-gct-dialog { box-sizing: border-box; width: min(460px, calc(100vw - 32px)); padding: 24px; border: 0; border-radius: 16px; background: #fff; color: #202124; box-shadow: 0 12px 48px #0004; font: 14px Arial, sans-serif; }
+#kn-gct-dialog::backdrop { background: #0006; }
+#kn-gct-dialog h2 { margin: 0 0 22px; font-size: 20px; }
+#kn-gct-dialog label { display: block; margin-bottom: 18px; font-weight: 600; }
+#kn-gct-dialog input, #kn-gct-dialog textarea { box-sizing: border-box; display: block; width: 100%; margin-top: 8px; padding: 10px; border: 1px solid #747775; border-radius: 6px; font: 14px Arial, sans-serif; }
+#kn-gct-dialog textarea:disabled { background: #f1f3f4; color: #444746; opacity: 1; resize: none; }
+#kn-gct-dialog .kn-gct-actions { display: flex; justify-content: flex-end; gap: 10px; }
+#kn-gct-dialog button { padding: 10px 16px; border: 1px solid #dadce0; border-radius: 20px; background: #fff; color: #0b57d0; cursor: pointer; }
+#kn-gct-dialog button[type="submit"] { background: #0b57d0; color: #fff; }
+#kn-gct-dialog [role="alert"] { color: #b3261e; }
+/* End gmail-tabs.css — version from manifest.json. */

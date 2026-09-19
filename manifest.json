@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Filter Tabs",
+  "version": "1.0.0",
+  "description": "Save Gmail searches as reorderable tabs above the message toolbar.",
+  "permissions": [
+    "storage"
+  ],
+  "minimum_chrome_version": "116",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "version.js",
+        "gmail-tabs-model.js",
+        "gmail-tabs.js"
+      ],
+      "css": [
+        "gmail-tabs.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
